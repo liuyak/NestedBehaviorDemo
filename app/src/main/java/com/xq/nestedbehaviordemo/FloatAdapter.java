@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class CommonRVAdapter extends RecyclerView.Adapter<CommonRVAdapter.BehaviorViewHolder> {
+/**
+ * 浮层Adapter
+ */
+public class FloatAdapter extends RecyclerView.Adapter<FloatAdapter.BehaviorViewHolder> {
 
     private List<String> mItems;
 
@@ -25,7 +28,7 @@ public class CommonRVAdapter extends RecyclerView.Adapter<CommonRVAdapter.Behavi
     @NonNull
     @Override
     public BehaviorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new BehaviorViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.behavior_item_f, parent, false));
+        return new BehaviorViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.behavior_item_s, parent, false));
     }
 
     @Override
